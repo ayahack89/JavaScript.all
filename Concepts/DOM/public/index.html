@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JavaScript Endgame</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="heading-text">JavaScript Endgame</h1>
+        </div>
+        <div class="dom-box">
+            <h3>DOM (Document Object Model)</h3>
+            <span id="test-text">This is a text</span>
+            <br>
+            <span id="change-text">Change the text.</span>
+            <button class="btn" onclick="clickBtn()">Change</button>
+            <p>Hi, my name is Ayanabha Chatterjee. <br>
+                <strong>Please double tap this button to get my LinkedIn Profile</strong> <br>
+                <strong id="display-link" style="visibility: hidden;"><a
+                        href="https://www.linkedin.com/in/ayanabha-chatterjee-104979256/" target="_blank">Ayanabha
+                        Chatterjee LinkedIn</a></strong>
+                <br><br>
+                <button class="btn" ondblclick="dbClick()">Double Tap</button>
+            </p>
+            <h4>Query Selectors</h4>
+            <ul class="list-group">
+                <li class="list-item">Home</li>
+                <li class="list-item">About</li>
+                <li class="list-item">Contact</li>
+                <li class="list-item">FAQ</li>
+                <li class="list-item">Join Us</li>
+            </ul>
+            <div class="image-container">
+                <img src="../img/xeimage.jpg" alt="image" width="300px" id="TheImage">
+                <strong id="caption">Baby, hover the mouse in my boobies</strong>
+            </div>
+        </div>
+    </div>
+    <script src="../js/DOM.js"></script>
+</body>
+
+</html>

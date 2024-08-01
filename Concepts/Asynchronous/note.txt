@@ -1,0 +1,110 @@
+Asynchronous Programming in JavaScript
+
+Asynchronous Programming
+
+Asynchronous programming allows functions to run in parallel with other functions, enabling non-blocking operations and enhancing performance, especially in tasks that involve waiting for external resources or processes. Asynchronous functions say, "I will finish later," allowing the program to continue executing other tasks in the meantime.
+
+Callbacks
+
+Callbacks are functions passed as arguments to other functions to be executed later, often after a task completes. This approach enables asynchronous operations, ensuring that subsequent code does not wait for the completion of the initial task.
+
+There are two common types of callbacks in JavaScript:
+
+setTimeout
+
+setTimeout is a callback API with low priority. It schedules a function to be executed after a specified delay, allowing other code to run in the meantime.
+
+javascript
+Copy code
+console.log('Start');
+setTimeout(() => {
+    console.log('This message is delayed by 2 seconds');
+}, 2000);
+console.log('End');
+Promises
+
+Promises are a higher-priority callback API. They represent a value that may be available now, or in the future, or never. Promises enable more readable and manageable asynchronous code by providing .then() and .catch() methods for handling success and failure cases.
+
+javascript
+Copy code
+let promise = new Promise((resolve, reject) => {
+    let success = true; // Change to false to see the rejection
+    if(success) {
+        resolve('Promise resolved!');
+    } else {
+        reject('Promise rejected!');
+    }
+});
+
+promise.then((message) => {
+    console.log(message);
+}).catch((error) => {
+    console.error(error);
+});
+Fetch
+
+fetch is a modern, updated global function for making network requests.
+
+The fetch() method initiates the process of fetching a resource from the network. It returns a promise that is fulfilled once the response is available. This approach simplifies network requests by providing a more powerful and flexible API compared to older methods like XMLHttpRequest.
+
+javascript
+Copy code
+fetch('https://api.github.com')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+Async & Await
+
+Async & Await are syntactic sugar over promises, making asynchronous code look and behave more like synchronous code.
+
+async functions always return a promise. If the function returns a value, the promise will be resolved with that value; if the function throws an error, the promise will be rejected. await pauses the execution of the async function, waiting for the promise to resolve. It simplifies promise handling, making the code cleaner and easier to understand.
+
+javascript
+Copy code
+async function fetchData() {
+    try {
+        let response = await fetch('https://api.github.com');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+fetchData();
+Callback Hell
+
+Callback Hell refers to a situation where multiple nested callbacks make the code hard to read and maintain. It often occurs when many asynchronous operations are chained together in a way that leads to deeply nested callback functions.
+
+This can result in code that is difficult to follow and debug, commonly referred to as "pyramid of doom." Using promises and async/await can help mitigate callback hell by flattening the structure of the code, making it more readable and maintainable.
+
+javascript
+Copy code
+// Callback Hell Example
+doSomething(function(result) {
+    doSomethingElse(result, function(newResult) {
+        doThirdThing(newResult, function(finalResult) {
+            console.log('Got the final result: ' + finalResult);
+        }, failureCallback);
+    }, failureCallback);
+}, failureCallback);
+
+// Using Promises to Avoid Callback Hell
+doSomething()
+    .then(result => doSomethingElse(result))
+    .then(newResult => doThirdThing(newResult))
+    .then(finalResult => console.log('Got the final result: ' + finalResult))
+    .catch(failureCallback);
+
+// Using async/await to Avoid Callback Hell
+async function asyncFunction() {
+    try {
+        let result = await doSomething();
+        let newResult = await doSomethingElse(result);
+        let finalResult = await doThirdThing(newResult);
+        console.log('Got the final result: ' + finalResult);
+    } catch (error) {
+        failureCallback(error);
+    }
+}
+asyncFunction();
+By understanding these concepts, developers can effectively manage asynchronous operations in JavaScript, leading to more efficient and maintainable code.

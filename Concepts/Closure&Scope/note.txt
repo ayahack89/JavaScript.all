@@ -1,0 +1,8 @@
+JavaScript Closures and Scope
+
+Scope:  Scope determines the accessibility (visibility) of variables. JavaScript has two types of scope:
+       Global Scope: A variable declared outside a function becomes a global variable and is accessible from any part of the code.
+       Local Scope: A variable declared inside a function is local to that function and cannot be accessed from outside the function.
+
+Closures: A closure is a function having access to the parent scope, even after the parent function has closed. 
+       Closures are created every time a function is created.

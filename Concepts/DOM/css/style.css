@@ -1,0 +1,94 @@
+body {
+     font-family: cursive;
+     line-height: 1.6;
+     background-color: black;
+     color: white;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #27272a;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .heading h1 {
+     text-align: center;
+     color: yellow;
+ }
+ 
+ .dom-box {
+     margin-top: 20px;
+ }
+ 
+ h3, h4 {
+     color: yellow;
+ }
+ 
+ #test-text, #change-text {
+     font-size: 16px;
+     color: white;
+ }
+ 
+ .btn {
+     display: inline-block;
+     padding: 10px 20px;
+     margin-top: 10px;
+     background-color: yellow;
+     color: black;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     font-family: cursive;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .btn:hover {
+     background-color: rgba(243, 243, 24, 0.912);
+ }
+ 
+ #display-link a {
+     color: #007bff;
+     text-decoration: none;
+ }
+ 
+ #display-link a:hover {
+     text-decoration: underline;
+ }
+ 
+ .list-group {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ .list-item {
+     padding: 10px;
+     background-color: #27272a;
+     border: 1px solid #ddd;
+     margin: 5px 0;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .list-item:hover {
+     background-color: rgba(249, 249, 56, 0.736);
+     color: black;
+ }
+ 
+ .image-container {
+     margin-top: 20px;
+     text-align: center;
+ }
+ 
+ #caption {
+     margin-top: 10px;
+     display: block;
+     color: white;
+     font-weight: bold;
+ }
+ 
