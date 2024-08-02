@@ -1,10 +1,10 @@
 /*
-ES6 Consepts:-
+ES6 Concepts:-
 Let & Const ✅
 Arrow functions ✅
 Template literals ✅
-Default parameters
-Rest & Sprade
+Default parameters ✅
+Rest & Spade
 Destructuring
 Classes
 Modules
@@ -29,7 +29,7 @@ console.log("Addition: ",a+b);
 //let
 let c = 200;
 let u = 39;
-console.log("Substraction: ", c-u);
+console.log("Subtraction: ", c-u);
 
 //const
 const d = 68;
@@ -72,7 +72,7 @@ console.log("Outer scope: ", x);
 
 
 //const w;
-// w = "xxnxx";
+// w = "xxix";
 // console.log(w); /* Error: Uncaught SyntaxError: Missing initializer in const declaration */
 
 //const y = 5;
@@ -106,8 +106,26 @@ console.log("The arrow function with implicit return: "+funThree());
 
 // 3) Template literals
 // This is a old formant to calculate numbers in a string.
-let oldformat = "Two + Two => "+(2+2)+" & "+"Three - Three => "+(3-3);
-console.log(oldformat);
+let OldFormat = "Two + Two => "+(2+2)+" & "+"Three - Three => "+(3-3);
+console.log(OldFormat);
 
-let newformat = `Two + Two => ${2+2} & Three - Three => ${3-3}`;
-console.log(newformat);
+let NewFormat = `Two + Two => ${2+2} & Three - Three => ${3-3}`;
+console.log(NewFormat);
+
+
+// 4) Default parameters
+function exVar(a,b,c){
+  console.log(a,b,c);
+  
+}
+exVar(12,16,18);
+exVar(12);
+exVar(16,18);
+
+function defaultFun(a=0,b=0,c=0){
+  console.log(a,b,c);
+}
+defaultFun(2,6,8);
+defaultFun(2);
+defaultFun(6,8);
+
