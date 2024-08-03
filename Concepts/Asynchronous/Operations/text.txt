@@ -1,0 +1,1 @@
+In JavaScript, asynchronous programming allows you to execute code without blocking the main thread of execution. This is crucial for handling tasks that might take a while to complete, such as fetching data from a server or reading a file.

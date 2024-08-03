@@ -1,3 +1,14 @@
+//Async & Await
+let asyncFun = async function asyncUser(){
+     let raw = await fetch(`https://randomuser.me/api/`);
+     let result = await raw.json();
+     console.log(result);
+     
+
+}
+
+asyncFun();
+
 // Promises using Async & Await 
 const AsyncAwaitPromise = new Promise(function (resolve, reject) {
      setTimeout(() => {
@@ -25,3 +36,4 @@ async function AsyncPromiseConsumer() {
 }
 
 AsyncPromiseConsumer();
+

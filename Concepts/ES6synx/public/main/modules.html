@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../css/style.css">
+     <title>JavaScripts Modules</title>
+</head>
+<body>
+     <h2>Modules in JavaScript</h2>
+     <div class="form-container">
+          <h2>Calculate Sum</h2>
+          <form action="#">
+            <label for="firstNum">First Number</label>
+            <input type="number" id="firstNumber" required>
+            <label for="secondNumber">Second Number</label>
+            <input type="number" id="secondNumber" required> <br>
+            <label for="select">Select operation</label>
+            <select id="op">
+               <option value="null">--Select an operation --</option>
+               <option value="+">Addition(+)</option>
+               <option value="-">Substraction(-)</option>
+               <option value="*">Multiplication(*)</option>
+               <option value="/">Division(/)</option>
+               <option value="%">Modulo(%)</option>
+            </select>
+            <input type="submit" value="Result" id="Btn">
+          </form>
+          <div>
+               <span id="retrieve"></span>
+          </div>
+        </div>
+     <script src="../../js/Modules.js"></script>
+</body>
+</html>

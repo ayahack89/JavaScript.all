@@ -1,6 +1,13 @@
 ES6 (ECMAScript 2015) introduced many new features and syntax improvements to JavaScript. Here's a summary of the key concepts and syntax changes in ES6:
 
 1. Let and Const
+In ES6, both `let` and `const` are used to declare variables, but they have key differences. `let`
+allows you to store data in a variable and change it later, providing block-level scope. On the
+other hand, `const` declares a variable whose value cannot be reassigned, making it a constant.
+However, while `const` prevents reassignment of the variable itself, it does not make objects or
+arrays immutable; their properties can still be changed. Additionally, unlike `var`, variables
+declared with `let` and `const` are not added to the global `window` object in the browser.
+
 let: Block-scoped variable, unlike var, which is function-scoped.
 javascript
 Copy code

@@ -100,6 +100,66 @@ FileAccess.then(function (fileDetails) {
 })
 
 
+// Write a JavaScript program to print this in async way :=
+//1.One: Come back to home
+//2.Two: Complete the dinner
+//3.Three: Watching series
+//3.Four: Go to sleep
+let taskComplete;
+let One = new Promise((resolve, reject) => {
+     taskComplete = true;
+     if (taskComplete) {
+          resolve("1.Come back to home");
+     }
+})
+let Two = One.then(function (data) {
+     setTimeout(() => {
+          console.log(data);
+     }, 2000)
+     return new Promise((resolve, reject) => {
+          taskComplete = true;
+          if (taskComplete) {
+               resolve("2.Complete the dinner");
+          }
+     })
+}).catch(function () {
+     console.log("1.Die:Err");
+})
+let Three = Two.then(function (data) {
+     setTimeout(() => {
+          console.log(data);
+     }, 3000)
+     return new Promise((resolve, reject) => {
+          taskComplete = true;
+          if (taskComplete) {
+               resolve("3.Watching series");
+          }
+     })
+}).catch(function () {
+     console.log("2.Die:Err");
+})
+let Four = Three.then(function (data) {
+     setTimeout(() => {
+          console.log(data);
+     }, 4000)
+     return new Promise((resolve, reject) => {
+          taskComplete = true;
+          if (taskComplete) {
+               resolve("4.Go to sleep");
+          }
+     })
+}).catch(function () {
+     console.log("4.Die:Err");
+})
+Four.then(function (data) {
+     setTimeout(() => {
+          console.log(data);
+     }, 5000)
+}).catch(function () {
+     console.log("4.Die:Err");
+})
+
+
 
 
 

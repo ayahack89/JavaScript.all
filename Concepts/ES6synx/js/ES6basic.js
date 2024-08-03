@@ -4,23 +4,13 @@ Let & Const ✅
 Arrow functions ✅
 Template literals ✅
 Default parameters ✅
-Rest & Spade
-Destructuring
-Classes
-Modules
-Async & Await
-Try & Catch
+Rest & Sprade ✅
+Destructuring ✅
+Classes ✅
+Modules ✅
 */
 
 // 1) Let & Const
-/*
-In ES6, both `let` and `const` are used to declare variables, but they have key differences. `let`
-allows you to store data in a variable and change it later, providing block-level scope. On the
-other hand, `const` declares a variable whose value cannot be reassigned, making it a constant.
-However, while `const` prevents reassignment of the variable itself, it does not make objects or
-arrays immutable; their properties can still be changed. Additionally, unlike `var`, variables
-declared with `let` and `const` are not added to the global `window` object in the browser.
-*/
 //var
 var a = 12;
 var b = 13;
@@ -128,4 +118,49 @@ function defaultFun(a=0,b=0,c=0){
 defaultFun(2,6,8);
 defaultFun(2);
 defaultFun(6,8);
+
+// 5) Sprade & Rest operator
+var arr = [1,2,3,4,5,6,7,8,9];
+var brr = arr;
+console.log("Reference => ",brr); //That is not the correct way to copy an array.
+
+//Sprade operator 
+//Use sprade operator this is the correct way to copy an array.
+var arrNew = [23,4,56,88.123, 1];
+var nun = [...arrNew];
+console.log("Copy =>",nun);
+
+//Rest operator
+function badBoy(sx, lol, lamo, ...skibidi){
+  console.log(sx, lol, lamo, skibidi);
+  
+}
+badBoy(1223, 5687, 9089, 2534, 7879, 1233, 7856);
+
+// Destructuring 
+//array
+var myArr = [2,3,5,6];
+var [v,b,,o] = myArr; 
+console.log([v,b,o]);
+
+//Object
+var obg = {
+  name: "John Deo",
+  age: 26,
+  gender: "Male",
+}
+var {age} = obg;
+console.log({age});
+
+
+                                  
+
+
+
+
+
+
+
+
+
 
