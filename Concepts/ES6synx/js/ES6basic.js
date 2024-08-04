@@ -4,7 +4,7 @@ Let & Const ✅
 Arrow functions ✅
 Template literals ✅
 Default parameters ✅
-Rest & Sprade ✅
+Rest & Spared ✅
 Destructuring ✅
 Classes ✅
 Modules ✅
@@ -119,13 +119,13 @@ defaultFun(2,6,8);
 defaultFun(2);
 defaultFun(6,8);
 
-// 5) Sprade & Rest operator
+// 5) Spared & Rest operator
 var arr = [1,2,3,4,5,6,7,8,9];
 var brr = arr;
 console.log("Reference => ",brr); //That is not the correct way to copy an array.
 
-//Sprade operator 
-//Use sprade operator this is the correct way to copy an array.
+//Spared operator 
+//Use spared operator this is the correct way to copy an array.
 var arrNew = [23,4,56,88.123, 1];
 var nun = [...arrNew];
 console.log("Copy =>",nun);
