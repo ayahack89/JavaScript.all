@@ -1,5 +1,6 @@
 import { consoleLog } from './js/Utility.js';
 import { Calculator } from './js/JsCal.js';
+import { Ascending, Descending } from './js/ArrShort.js';
 //Package: Utility.js
 const obg = consoleLog();
 console.log(obg);
@@ -43,6 +44,15 @@ finalObg.Sub();
 finalObg.Mul();
 finalObg.Div();
 finalObg.Mod()
+
+//Package: ArrShort.js
+let MyArray = [2,67,56,7,8,12,23,88,10,100,0,82];
+console.log(Ascending(MyArray));
+console.log(Descending(MyArray));
+
+
+
+
 
 
 
