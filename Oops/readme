@@ -1,0 +1,14 @@
+1.Class and Objects
+  Class: A blueprint for creating objects. Classes in JavaScript are defined using the class keyword.
+  Object: An instance of a class. Objects hold data in properties and behavior in methods.
+
+2.Encapsulation
+  It is the combination of data and method in a same class
+
+3.Inheritance
+4.Polymorphism 
+5.Abstraction
+6.Static methods & Properties
+7.Contractor Function 
+8.Prototype and Inheritance
+9.Method Overloading

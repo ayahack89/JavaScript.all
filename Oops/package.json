@@ -1,0 +1,15 @@
+{
+  "name": "oops",
+  "version": "1.0.0",
+  "description": "Object oriented programming in JavaScript.",
+  "main": "ClassAndObjects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cao": "node ClassAndObjects.js",
+    "enc": "node Encapsulation.js",
+    "inherit": "node Inheritance.js",
+    "poly": "node Polymorphism.js"
+  },
+  "author": "Ayanabha",
+  "license": "ISC"
+}
