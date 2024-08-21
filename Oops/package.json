@@ -8,7 +8,8 @@
     "cao": "node ClassAndObjects.js",
     "enc": "node Encapsulation.js",
     "inherit": "node Inheritance.js",
-    "poly": "node Polymorphism.js"
+    "poly": "node Polymorphism.js",
+    "abs": "node Abstraction.js"
   },
   "author": "Ayanabha",
   "license": "ISC"
