@@ -9,7 +9,11 @@
     "enc": "node Encapsulation.js",
     "inherit": "node Inheritance.js",
     "poly": "node Polymorphism.js",
-    "abs": "node Abstraction.js"
+    "abs": "node Abstraction.js",
+    "static": "node StaticMethod.js",
+    "input": "node TakeUserInput.js",
+    "const": "node Constructor_Function.js",
+    "pro" : "node Prototype.js"
   },
   "author": "Ayanabha",
   "license": "ISC"
