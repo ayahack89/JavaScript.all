@@ -1,0 +1,15 @@
+{
+  "name": "oopspractices",
+  "version": "1.0.0",
+  "description": "Solve the problems using oops in JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "problem1": "node problemOne.js",
+    "problem2": "node problemTwo.js",
+    "problem3": "node problemThree.js",
+    "problem4": "node problemFour.js"
+  },
+  "author": "Ayanabha Chatterjee",
+  "license": "ISC"
+}

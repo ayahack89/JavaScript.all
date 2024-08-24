@@ -12,8 +12,9 @@
     "abs": "node Abstraction.js",
     "static": "node StaticMethod.js",
     "input": "node TakeUserInput.js",
-    "const": "node Constructor_Function.js",
-    "pro" : "node Prototype.js"
+    "const": "node Constructor.js",
+    "pro" : "node Prototype.js",
+    "mo": "node MethodOverriding.js"
   },
   "author": "Ayanabha",
   "license": "ISC"
