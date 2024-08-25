@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "problem1": "node problemOne.js",
-    "problem2": "node problemTwo.js",
-    "problem3": "node problemThree.js",
-    "problem4": "node problemFour.js"
+    "problem1": "node Problem1.js",
+    "problem2": "node Problem2.js",
+    "problem3": "node Problem3.js",
+    "problem4": "node Problem4.js"
   },
   "author": "Ayanabha Chatterjee",
   "license": "ISC"
