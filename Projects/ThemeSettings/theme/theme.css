@@ -1,0 +1,34 @@
+:root {
+     --dark-theme: #09090b;
+     --light-theme: #ffff;
+ }
+ 
+ .bg-dark-theme {
+     background-color: var(--dark-theme);
+     color: white;
+ }
+ 
+ .bg-light-theme {
+     background-color: var(--light-theme);
+     color: black;
+ }
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .container{
+    margin: auto;
+    width: 500px;
+    margin-top: 30vh;
+ }
+ select{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: gray;
+    font-weight: bolder;
+    font-size: 1rem;
+ }
+
+   
+   
