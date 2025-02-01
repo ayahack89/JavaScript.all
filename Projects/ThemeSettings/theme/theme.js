@@ -27,3 +27,45 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
         applyTheme('SystemDefault');
     }
 });
+
+
+
+//Code Substitution (Another Logic)
+// const themeToggle = document.getElementById('theme');
+
+// // Load saved theme from localStorage on page load
+// document.addEventListener('DOMContentLoaded', () => {
+//     const savedTheme = localStorage.getItem('theme') || 'SystemDefault';
+//     applyTheme(savedTheme);
+//     themeToggle.value = savedTheme;
+// });
+
+// // Event listener for theme change
+// themeToggle.addEventListener('change', () => {
+//     const selectedTheme = themeToggle.value;
+//     applyTheme(selectedTheme);
+//     localStorage.setItem('theme', selectedTheme);
+// });
+
+// function applyTheme(theme) {
+//     // Remove existing theme classes
+//     document.body.classList.remove('bg-dark-theme', 'bg-light-theme');
+
+//     switch (theme) {
+//         case 'Light':
+//             document.body.classList.add('bg-light-theme');
+//             break;
+//         case 'Dark':
+//             document.body.classList.add('bg-dark-theme');
+//             break;
+//         case 'SystemDefault':
+//         default:
+//             // System default logic - adjust based on user’s system preference
+//             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//                 document.body.classList.add('bg-dark-theme');
+//             } else {
+//                 document.body.classList.add('bg-light-theme');
+//             }
+//             break;
+//     }
+// }
